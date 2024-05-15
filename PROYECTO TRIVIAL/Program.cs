@@ -31,22 +31,195 @@ Console.ReadKey();
 //Limpia la pantalla
 Console.Clear();
 
-//inicializar la variable (int) puntuacion
-/* Recolectar la respuesta del usuario
+//PREGUNTAS
+// Inicializar la puntuación
+int puntuacion = 0;
+
+// Recolectar la respuesta del usuario
 string respuestaAbierta;
-ConsoleKey respuestaTest;*/
+ConsoleKey respuestaTest = ConsoleKey.Y;
 
-//MOSTRAR PREGUNTA 
+// Mostrar la primera pregunta
+Console.WriteLine("PREGUNTA 1: ¿En qué año el hombre pisó la Luna por primera vez?");
+respuestaAbierta = Console.ReadLine();
 
-//RECOGER RESPUESTA DEL USUARIO
+// Verificar si la respuesta es correcta
+if (respuestaAbierta == "1969")
+{
+    // Actualizar la puntuación
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
 
-//SI LA RESPUESTA ES CORRECTA
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("La nave Apolo 11 llegó a la Luna en el año 1969, siendo ese año cuando Neil Armstrong dió “un pequeño paso para el hombre, un gran paso para la humanidad”.\n");
+    Console.ForegroundColor = ConsoleColor.White;
 
-//IMPRIMIR POR PANTALLA "LA RESPUESTA ES CORRECTA. SUMAS 10 PUNTOS"
-//SUMAR 10 PUNTOS A LA PUNTUACIÓN 
+}
 
-//SI LA RESPUESTA ES CORRECTA
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
 
-//IMPRIMIR POR PANTALLA "LA RESPUESTA ES INCORRECTA. INIDICAR LA RESPUESTA CORRECTA"
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ForegroundColor = ConsoleColor.White;
+Console.ReadKey();
 
-//MOSTRAR PUNCIÓN FINAL. 
+// Limpia la pantalla
+Console.Clear();
+
+// Mostrar la SEGUNDA pregunta abierta
+Console.WriteLine("PREGUNTA 2:¿En qué ciudad se celebró la primera Semana de la Moda?");
+Console.WriteLine("a) Milan");
+Console.WriteLine("b) Paris");
+Console.WriteLine("c) Nueva York");
+respuestaTest = Console.ReadKey().Key;
+
+
+//comprobar que la respuesta sea valida
+while (respuestaTest != ConsoleKey.A && respuestaTest != ConsoleKey.B && respuestaTest != ConsoleKey.C)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nEsa respuesta no es valida. Por favor haz click en las tecla A/B/C");
+    Console.ForegroundColor = ConsoleColor.White;
+    respuestaTest = Console.ReadKey().Key;
+}
+Console.Clear();
+if (respuestaTest == ConsoleKey.C)
+{
+    // Respuesta correcta
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+else if (respuestaTest == ConsoleKey.A || respuestaTest == ConsoleKey.B)
+{
+    // Respuesta incorrecta
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("Se celebró en Nueva York en el año 1943, con el objetivo de desviar la atención que acaparaba la moda francesa durante la Segunda Guerra Mundial\n");
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+Console.Clear();
+
+// Mostrar la TERCERA pregunta abierta
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 3:¿Cuál es el tenista que ha ganado en más ocasiones el título de Roland Garros? (hasta 2024)");
+Console.WriteLine("a) Roger Federer");
+Console.WriteLine("b) Rafa Nadal");
+Console.WriteLine("c) Novak Dokovic");
+respuestaTest = Console.ReadKey().Key;
+
+
+//comprobar que la respuesta sea valida
+while (respuestaTest != ConsoleKey.A && respuestaTest != ConsoleKey.B && respuestaTest != ConsoleKey.C)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nEsa respuesta no es valida. Por favor haz click en las tecla A/B/C");
+    Console.ForegroundColor = ConsoleColor.White;
+    respuestaTest = Console.ReadKey().Key;
+}
+Console.Clear();
+if (respuestaTest == ConsoleKey.B)
+{
+    // Respuesta correcta
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+else if (respuestaTest == ConsoleKey.A || respuestaTest == ConsoleKey.C)
+{
+    // Respuesta incorrecta
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("Rafa Nadal es el máximo ganador del Abierto de Francia con 14 victorias\n");
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+Console.Clear();
+
+// Mostrar la CUARTA pregunta
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 4: ¿Cómo se llama la protagonista de la saga de videojuegos \"The Legend of Zelda\"?");
+respuestaAbierta = Console.ReadLine();
+
+// Verificar si la respuesta es correcta
+if (respuestaAbierta == "LINK")
+{
+    // Actualizar la puntuación
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("El protagonista de la serie de videojuegos “The Legend of Zelda” se llama Link.\n");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+
+// Limpia la pantalla
+Console.Clear();
+
+// Mostrar la QUINTA pregunta
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 5: ¿Cuánto duró la Guerra de los Cien Años?");
+respuestaAbierta = Console.ReadLine();
+
+// Verificar si la respuesta es correcta
+if (respuestaAbierta == "116")
+{
+    // Actualizar la puntuación
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("A pesar de que el nombre de esta guerra parece indicar que ocurrió un siglo entre su inicio y su final, en realidad tuvo una duración de 116 años.\n");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+
+// Limpia la pantalla
+Console.Clear();
