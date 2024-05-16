@@ -40,6 +40,9 @@ string respuestaAbierta;
 ConsoleKey respuestaTest = ConsoleKey.Y;
 
 // Mostrar la primera pregunta
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("Respuesta toda en NÚMEROS\n");
+Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("PREGUNTA 1: ¿En qué año el hombre pisó la Luna por primera vez?");
 respuestaAbierta = Console.ReadLine();
 
@@ -157,6 +160,9 @@ Console.ReadKey();
 Console.Clear();
 
 // Mostrar la CUARTA pregunta
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("Respuesta toda en MAYUSCULAS\n");
+Console.ForegroundColor = ConsoleColor.White;
 Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("PREGUNTA 4: ¿Cómo se llama la protagonista de la saga de videojuegos \"The Legend of Zelda\"?");
 respuestaAbierta = Console.ReadLine();
@@ -191,6 +197,9 @@ Console.ReadKey();
 Console.Clear();
 
 // Mostrar la QUINTA pregunta
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("Respuesta toda en NÚMEROS\n");
+Console.ForegroundColor = ConsoleColor.White;
 Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("PREGUNTA 5: ¿Cuánto duró la Guerra de los Cien Años?");
 respuestaAbierta = Console.ReadLine();
@@ -223,3 +232,215 @@ Console.ReadKey();
 
 // Limpia la pantalla
 Console.Clear();
+// Mostrar la SEXTA pregunta abierta
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 6:¿Cuál es el monte más alto del mundo?");
+Console.WriteLine("a) K2");
+Console.WriteLine("b) Everest");
+Console.WriteLine("c) Kilimanjaro");
+respuestaTest = Console.ReadKey().Key;
+
+
+//comprobar que la respuesta sea valida
+while (respuestaTest != ConsoleKey.A && respuestaTest != ConsoleKey.B && respuestaTest != ConsoleKey.C)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nEsa respuesta no es valida. Por favor haz click en las tecla A/B/C");
+    Console.ForegroundColor = ConsoleColor.White;
+    respuestaTest = Console.ReadKey().Key;
+}
+Console.Clear();
+if (respuestaTest == ConsoleKey.B)
+{
+    // Respuesta correcta
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+else if (respuestaTest == ConsoleKey.A || respuestaTest == ConsoleKey.C)
+{
+    // Respuesta incorrecta
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("El monte Everest es la montaña más alta, con una altitud de 8848,86 metros sobre el nivel del mar.\n");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+Console.Clear();
+
+// Mostrar la SEPTIMA pregunta
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("Respuesta toda en MAYUSCULAS\n");
+Console.ForegroundColor = ConsoleColor.White;
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 7: ¿Qué nombre tenía el caballo de Don Quijote de la Mancha?");
+respuestaAbierta = Console.ReadLine();
+
+// Verificar si la respuesta es correcta
+if (respuestaAbierta == "ROCINANTE")
+{
+    // Actualizar la puntuación
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("El caballo de este personaje, uno de los máximos exponentes de la literatura española en todo el mundo, recibía el nombre de Rocinante.\n");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+
+// Limpia la pantalla
+Console.Clear();
+
+// Mostrar la OCTAVA pregunta abierta
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 8:¿Dónde está la Muralla China?");
+Console.WriteLine("a) Al Norte de China");
+Console.WriteLine("b) Al Sur de China");
+Console.WriteLine("c) No está en China");
+respuestaTest = Console.ReadKey().Key;
+
+
+//comprobar que la respuesta sea valida
+while (respuestaTest != ConsoleKey.A && respuestaTest != ConsoleKey.B && respuestaTest != ConsoleKey.C)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nEsa respuesta no es valida. Por favor haz click en las tecla A/B/C");
+    Console.ForegroundColor = ConsoleColor.White;
+    respuestaTest = Console.ReadKey().Key;
+}
+Console.Clear();
+if (respuestaTest == ConsoleKey.A)
+{
+    // Respuesta correcta
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+else if (respuestaTest == ConsoleKey.B || respuestaTest == ConsoleKey.C)
+{
+    // Respuesta incorrecta
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("La Muralla China se ubica en el norte de China, limitando con el desierto de Gobi (Mongolia) y con Corea del Norte.\n");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+Console.Clear();
+
+// Mostrar la NOVENA pregunta
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("Respuesta toda en NÚMEROS\n");
+Console.ForegroundColor = ConsoleColor.White;
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 9: ¿Cuántos elementos forman la Tabla Periódica?");
+respuestaAbierta = Console.ReadLine();
+
+// Verificar si la respuesta es correcta
+if (respuestaAbierta == "118")
+{
+    // Actualizar la puntuación
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("En la tabla periódica actual, existen un total de 118 elementos químicos. \n");
+    Console.ForegroundColor = ConsoleColor.White;
+
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+
+// Limpia la pantalla
+Console.Clear();
+
+// Mostrar la DECIMA pregunta abierta
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("PREGUNTA 10:¿Quién pintó el “Guernica”?");
+Console.WriteLine("a) Diego Velázquez");
+Console.WriteLine("b) Leonardo da Vinci");
+Console.WriteLine("c) Pablo Picasso");
+respuestaTest = Console.ReadKey().Key;
+
+
+//comprobar que la respuesta sea valida
+while (respuestaTest != ConsoleKey.A && respuestaTest != ConsoleKey.B && respuestaTest != ConsoleKey.C)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nEsa respuesta no es valida. Por favor haz click en las tecla A/B/C");
+    Console.ForegroundColor = ConsoleColor.White;
+    respuestaTest = Console.ReadKey().Key;
+}
+Console.Clear();
+if (respuestaTest == ConsoleKey.C)
+{
+    // Respuesta correcta
+    puntuacion += 10;
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\n¡Respuesta correcta! Sumas 10 puntos.");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+else if (respuestaTest == ConsoleKey.A || respuestaTest == ConsoleKey.B)
+{
+    // Respuesta incorrecta
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\nRespuesta incorrecta.\n");
+    Console.WriteLine("Esta obra, que expresa el caos que conllevó la vivencia del bombardeo de la ciudad de Guernica durante la Guerra Civil Española, fue pintada por Pablo Picasso.\n");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\n\nPuntuación actual: " + puntuacion + " puntos");
+
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("¡Presiona cualquier tecla para CONTINUAR!");
+Console.ReadKey();
+Console.Clear();
+
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("TRIVIAL FINALIZADO");
+Console.WriteLine("------------------\n");
+Console.ForegroundColor = ConsoleColor.White;
+
+// Mostrar la puntuación actual
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("\nTu Puntuación final es: " + puntuacion + " puntos");
