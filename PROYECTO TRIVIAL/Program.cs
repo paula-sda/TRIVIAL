@@ -163,7 +163,6 @@ Console.Clear();
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("Respuesta toda en MAYUSCULAS\n");
 Console.ForegroundColor = ConsoleColor.White;
-Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("PREGUNTA 4: ¿Cómo se llama la protagonista de la saga de videojuegos \"The Legend of Zelda\"?");
 respuestaAbierta = Console.ReadLine();
 
@@ -199,7 +198,6 @@ Console.Clear();
 // Mostrar la QUINTA pregunta
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("Respuesta toda en NÚMEROS\n");
-Console.ForegroundColor = ConsoleColor.White;
 Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("PREGUNTA 5: ¿Cuánto duró la Guerra de los Cien Años?");
 respuestaAbierta = Console.ReadLine();
@@ -279,7 +277,6 @@ Console.Clear();
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("Respuesta toda en MAYUSCULAS\n");
 Console.ForegroundColor = ConsoleColor.White;
-Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("PREGUNTA 7: ¿Qué nombre tenía el caballo de Don Quijote de la Mancha?");
 respuestaAbierta = Console.ReadLine();
 
@@ -358,7 +355,6 @@ Console.Clear();
 // Mostrar la NOVENA pregunta
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("Respuesta toda en NÚMEROS\n");
-Console.ForegroundColor = ConsoleColor.White;
 Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine("PREGUNTA 9: ¿Cuántos elementos forman la Tabla Periódica?");
 respuestaAbierta = Console.ReadLine();
