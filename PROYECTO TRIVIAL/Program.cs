@@ -8,8 +8,38 @@ class Program
 {
     static void Main(string[] args)
     {
-        TrivialGame juego = new TrivialGame();
-        juego.Start();
+        bool jugarDeNuevo = true;
+
+        while (jugarDeNuevo)
+        {
+            TrivialGame juego = new TrivialGame();
+            juego.Start();
+
+            // Crear variable response e inicializar a ""
+            ConsoleKey response = ConsoleKey.Y;
+
+            Console.WriteLine("¿Quieres jugar otra vez? (Y/N): ");
+            response = Console.ReadKey().Key;
+
+            // Crear bucle while con la condición de que response != "N"
+            while (response != ConsoleKey.N && response != ConsoleKey.Y)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\nEsa respuesta no es valida. Por favor haz click en la tecla Y/N");
+                Console.ForegroundColor = ConsoleColor.White;
+                response = Console.ReadKey().Key;
+            }
+            Console.Clear();
+            if (response == ConsoleKey.N)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Gracias por jugar. ¡Hasta la próxima!");
+                break;
+            }
+
+
+            
+        }
     }
 }
 
@@ -148,7 +178,9 @@ class TrivialGame
             Console.Clear();
         }
 
-        Console.WriteLine("¡Juego terminado!");
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("¡JUEGO TERMINADO!");
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine($"Tu puntuación final es: {puntuacion} puntos");
     }
 }
