@@ -1,11 +1,21 @@
 ﻿TEXTO;RESPUESTA CORRECTA;EXPLICACION CORRECTA;OPCIONES PREGUNTA
 ¿En qué año el hombre pisó la Luna por primera vez?;1969;La nave Apolo 11 llegó a la Luna en el año 1969, siendo ese año cuando Neil Armstrong dió “un pequeño paso para el hombre, un gran paso para la humanidad.;
-¿En qué ciudad se celebró la primera Semana de la Moda?;c;Se celebró en Nueva York en el año 1943, con el objetivo de desviar la atención que acaparaba la moda francesa durante la Segunda Guerra Mundial;a) Milan | b) Paris \\nc) Nueva York
-¿Cuál es el tenista que ha ganado en más ocasiones el título de Roland Garros? (hasta 2024);b;Rafa Nadal es el máximo ganador del Abierto de Francia con 14 victorias;a) Milan | b) Paris \\nc) Nueva York
+¿En qué ciudad se celebró la primera Semana de la Moda?;c;Se celebró en Nueva York en el año 1943, con el objetivo de desviar la atención que acaparaba la moda francesa durante la Segunda Guerra Mundial;a) Milan|b) Paris|c) Nueva York
+¿Cuál es el tenista que ha ganado en más ocasiones el título de Roland Garros? (hasta 2024);b;Rafa Nadal es el máximo ganador del Abierto de Francia con 14 victorias;a) Roger Federer|b) Rafa Nadal|c) Novak Djokovic
 "¿Cómo se llama la protagonista de la saga de videojuegos \""The Legend of Zelda\""?";LINK;El protagonista de la serie de videojuegos “The Legend of Zelda” se llama Link.;
 ¿Cuánto duró la Guerra de los Cien Años?;116;A pesar de que el nombre de esta guerra parece indicar que ocurrió un siglo entre su inicio y su final, en realidad tuvo una duración de 116 años.;
-¿Cuál es el monte más alto del mundo?;b;El monte Everest es la montaña más alta, con una altitud de 8848,86 metros sobre el nivel del mar.;a) K2 | b) Everest  \\nc) Kilimanjaro
+¿Cuál es el monte más alto del mundo?;b;El monte Everest es la montaña más alta, con una altitud de 8848,86 metros sobre el nivel del mar.;a) K2|b) Everest|c) Kilimanjaro
 ¿Qué nombre tenía el caballo de Don Quijote de la Mancha?;ROCINANTE;El caballo de este personaje, uno de los máximos exponentes de la literatura española en todo el mundo, recibía el nombre de Rocinante.;
-"¿Dónde está la Muralla China?""";a;La Muralla China se ubica en el norte de China, limitando con el desierto de Gobi (Mongolia) y con Corea del Norte.;a) Al Norte de China | b) Al Sur de China \\nc) No está en China
+"¿Dónde está la Muralla China?""";a;La Muralla China se ubica en el norte de China, limitando con el desierto de Gobi (Mongolia) y con Corea del Norte.;a) Al Norte de China|b) Al Sur de China|c) No está en China
 ¿Cuántos elementos forman la Tabla Periódica?;118;En la tabla periódica actual, existen un total de 118 elementos químicos. ;
-¿Quién pintó el “Guernica”?;c;Esta obra, que expresa el caos que conllevó la vivencia del bombardeo de la ciudad de Guernica durante la Guerra Civil Española, fue pintada por Pablo Picasso.;a) Diego Velázquez | b) Leonardo da Vinci \\nc) Pablo Picasso
+¿Quién pintó el “Guernica”?;c;Esta obra, que expresa el caos que conllevó la vivencia del bombardeo de la ciudad de Guernica durante la Guerra Civil Española, fue pintada por Pablo Picasso.;a) Diego Velázquez|b) Leonardo da Vinci|c) Pablo Picasso
+¿En qué año se produjo la Revolución Francesa?;1789;La Revolución Francesa comenzó en 1789 y duró aproximadamente una década.;
+¿Quién escribió 'Don Quijote de la Mancha'?;MIGUEL DE CERVANTES;"¿Quién escribió 'Don Quijote de la Mancha'?"", ""Miguel de Cervantes a principios de 1605.";
+¿Cómo se llama el pan con chorizo típico de Asturias?;BOLLO PREÑAO;"En Asturias, se le llama bollo preñao, también se le conoce como ""choripan"".";
+¿Cuál es la capital de Japón?;TOKIO;La capital de Japón es Tokio.;
+¿Qué país es conocido como 'la Tierra del Sol Naciente'?;JAPÓN;"El nombre de Japón en japonés, Nihon o Nippon, significa “país donde nace el sol”; de ahí que se le conozca como el país del sol naciente.";
+¿Cuál es el río más largo del mundo?;b;El Río Amazonas es el río más largo del mundo con 6400  kms  de longitud.;a) Río Nilo|b) Río Amazonas|c) Río Yangtsé
+¿Quién fue el famoso físico que formuló la teoría de la relatividad?;ALBERT EINSTEIN;Albert Einstein formuló la teoría de la relatividad en 1905.;
+¿Cuál es la capital de Australia?;c;La capital de Australia es Canberra.;a) Melbourne|b) Sídney|c) Canberra
+¿Quién fue el primer presidente de los Estados Unidos?;a;George Washington fue el primer presidente de los Estados Unidos.;a) George Washington|b) Thomas Jefferson|c) Abraham Lincoln
+¿Cuál es el océano más grande del mundo?;b;El Océano Pacífico es el océano más grande del mundo.Abarca más de 155 millones de kms cuadrados desde la costa oeste de América hasta la costa este de Asia, y tiene una profundidad media de más de 4000 ms.;a) Océano Atlántico|b) Océano Pacífico|c) Océano Índico
